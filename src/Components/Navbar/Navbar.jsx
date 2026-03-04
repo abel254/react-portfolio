@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { RiMenuLine, RiCloseFill } from "@remixicon/react";
+import { MdMenu } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [menu, openMenu] = useState(false);
@@ -34,7 +36,7 @@ const Navbar = () => {
         </a>
       </ul>
       {showMenu ? (
-        <RiMenuLine
+        <MdMenu
           size={30}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
           onClick={() => {
@@ -43,7 +45,7 @@ const Navbar = () => {
           }}
         />
       ) : (
-        <RiCloseFill
+        <MdClose
           size={30}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
           onClick={() => {
