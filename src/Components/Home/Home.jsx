@@ -41,9 +41,13 @@ const Home = () => {
           the aim of participating in creating real life projects that solve
           modern problems in this era of technology.
         </p>
-        <button className="bg-[#465697] mt-5 md:md-10 py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 rounded-3xl hover:opacity-85 duration-300 hover:scale-105 font-semibold">
+       <div className="mt-5 hover:cursor-pointer"> <a
+          href="#Footer"
+          className="bg-[#465697] md:md-10 py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 rounded-3xl hover:opacity-85 duration-300 hover:scale-105 font-semibold"
+        >
           Contact Me
-        </button>
+        </a></div>
+        <button></button>
       </div>
       <div>
         <img src={coding} alt="man-coding" className="w-3/5" />
